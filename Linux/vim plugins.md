@@ -1,13 +1,13 @@
-#vim 插件篇
-##准备条件
+# vim 插件篇
+## 准备条件
 1. 先安装vim（废话）
 2. 安装git（许多插件可以直接git下载手动安装）
-##安装Vundle
+## 安装Vundle
 1. 创建一个目录，Vim的插件将会被下载并且安装在这个目录上。默认情况下，这个目录为~/.vim/bundle。
 `$ mkdir -p ~/.vim/vundle`
 2. 使用如下指令安装Vundle。Vundle本身也是一个vim插件。因此我们同样把vundle安装到之前创建的目录~/.vim/bundle下
 `$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-##配置Vundle
+## 配置Vundle
 ![.vimrc](img/vimrc.png)
 ```vim
 set number
@@ -79,22 +79,22 @@ let g:airline#extensions#tabline#enabled = 1
 如果你有同名的插件，你可以重命名你的插件，这样它们就不会发生冲突了。
 `$ Plugin 'user/plugin', {'name': 'newPlugin'}`
 
-##Vundle使用
+## Vundle使用
 :PluginList       - lists configured plugins
 :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 :PluginSearch foo - searches for foo; append `!` to refresh local cache
 :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
-##安装其他插件
+## 安装其他插件
 [vimawesome](https://vimawesome.com/) 上面有很多很棒的插件 说明月很详细
 
-##NERDTree插件
+## NERDTree插件
 一个文件夹侧边栏的插件
 `Plugin 'https://github.com/scrooloose/nerdtree.git'`
 安装之后使用`:NERDTree`命令打开侧边栏
 在`.vimrc`中添加`autocmd vimenter * NERDTree`可以在vim启动时自动打开侧边栏
 
-##surround插件
+## surround插件
 成对的修改、添加和删除 括号、引号、XML标签等等
 `Plugin 'surround.vim'`
 
@@ -140,7 +140,7 @@ This plugin is very powerful for HTML and XML editing, a niche which currently s
 
 The `.` command will work with `ds`, `cs`, and `yss` if you install [repeat.vim](https://github.com/tpope/vim-repeat).
 
-##vim-airline
+## vim-airline
 一款主题皮肤插件，it's so cool！[插件地址](https://vimawesome.com/plugin/vim-airline ) [主题效果截图](https://github.com/vim-airline/vim-airline/wiki/Screenshots)
 安装非常简单，使用Vundle，.vimrc加上以下配置：
 ```
@@ -159,8 +159,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 
 
-##附录
-###vim一些参考性设置
+## 附录
+### vim一些参考性设置
 请选择性食用：
 ```
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

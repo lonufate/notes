@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="css/CoreJava.css">
 <script type="text/javascript" src="js/CoreJava.js"></script>
-#<span id="top">Core Java Volume I</span>
+# <span id="top">Core Java Volume I</span>
 [TOC]
 
-##基础
+## 基础
 >1. java中 **没有** 任何无符号类型（unsigned）
 
 >2. 若果需要在计算中不含有任何舍入误差，可以使用 **BigDecimal**
@@ -64,7 +64,7 @@
 
 >12. 带label的break
 
-##对象与类
+## 对象与类
 >1. java程序设计语言总是按值调用的。
 >>方法得到的是所有参数值的一个拷贝，特别是，方法不能修改传递给它的任何参数变量的内容。
     ```java
@@ -94,7 +94,7 @@
     * 将职责过多的类进行分解
     * 类名和方法名要能体现它们的职责（类名：名词、形容词或动名词修饰的名词）
 
-##继承
+## 继承
 >1. 如果子类的构造器没有显式的调用超类的构造器，则将自动的调用超类默认（无参）的构造器。这时候如果超类没有无参构造器，java编译器将报告错误。
 
 >2. 包含一个或者多个抽象方法的类，必须声明为抽象类。
@@ -190,7 +190,7 @@
     7). 不要过多地使用反射。
     反射机制使得人们可以通过运行时查看域和方法，让人们编写出更具有通用性的程序。这种功能对于编写系统程序来说及其实用，但是通常不适用于编写应用程序。反射时很脆弱的，即编译器很难帮组人们发现程序中的错误，因此只有在运行时才发现错误并导致异常
 
-##接口与内部类
+## 接口与内部类
 >1. 在java程序设计语言中，接口不是类，而是对类的一组需求描述，这些类要遵从接口描述的统一格式进行定义。
 不能用new实例化一个接口。
 接口中不能包含实例域或静态方法，可以包含常量。
@@ -234,7 +234,7 @@ javax.swing.Timer类接收一个监听器对象（实现ActionListener）。到�
 在内部类不需要访问外围类对象的时候，应该使用静态内部类。也有人用嵌套类（nested class）表示静态内部类。
 声明在接口中的内部类自动成为static和public类。
 
-##部署应用程序
+## 部署应用程序
 >1. Jar文件
 MENIFEST.MF清单文件。
 使用Main-Class：指定程序入口。指定类名不能带.class后缀。
@@ -249,7 +249,7 @@ Properties类
 >3. Preferences
 以树的形式储存属性值。提供一个与平台无关的中心知识库。
 
-##异常、断言、日志和调试
+## 异常、断言、日志和调试
 >1. Java异常层次结构简化图
 ![](img/exceptionFamily.png)
 Error类描述Java运行时系统的内部错误和资源耗尽错误。
@@ -336,7 +336,7 @@ for (Thread t : map.keySet()) {
     然后进入localhost:7000，将会运行一个网络应用程序，借此探查转储对象时堆的内容。
     9). 使用`-Xprof`标志运行Java虚拟机，就会运行一个基本的剖析器来跟踪那些代码中经常被调用的方法。剖析信息将发送给System.out输出结果中还会显示哪些方法是由即时编译器编译的。
 
-##泛型
+## 泛型
 >1. 在Java库中，使用变量E表示集合的元素类型，K和V分别表示表的关键字与值的类型。T（需要时还可以用临近的字母U和S）表示“任意类型”。
 
 >2. `<T extends BoundingType>`使用extends而不是implements，表示T是绑定类型的子类型（subtype）.T和绑定类型可以是类，也可以是接口。选择extends的原因时更接近子类的概念。
@@ -415,7 +415,7 @@ public static <T extends Throwable> void doWork(T t) throws T { //OK
 
 >14. 通配符限定、通配符捕获。
 
-###反射和泛型
+### 反射和泛型
 >1. Class<T>
 String.class是Class<String>类唯一的对象。
 
@@ -426,7 +426,7 @@ String.class是Class<String>类唯一的对象。
     * ParameterizadType接口，描述泛型类或者泛型接口类型（如 Comparable<? super T>）。
     * GenericArrayType接口，描述泛型数组（如 T[]）。
 
-##集合
+## 集合
 ![Java库中的具体集合](img/collectionList.png)
 ### 迭代器Iterator接口
 1. 应该将java迭代器认为是位于 *两个元素之间*。当调用`next`时，迭代器就 *越过* 下一个元素，并返回刚刚越过的那个元素的引用。类似下图：
@@ -542,7 +542,7 @@ keySet既不是HashSet，也不是TreeSet。
 ![Map API](img/apiMap.png)
 ![HashMap TreeMap SortedMap API](img/apiHashTreeSortedMap.png)
 
-###专用集与映射表类
+### 专用集与映射表类
 1. 弱散列映射表（WeakHashMap）
 如果有一个值，对应的键已经不再使用了，但是垃圾回收器是不能删除它的，除非整个映射表对象是不活动的。
 WeakHashMap类就是用来解决这个问题的。
@@ -733,7 +733,7 @@ HashSet<String> staff  = new HashSet(Arrays.asList(values));
 
 **PS:** 为什么不直接将一个Class对象传递给toArray方法。其原因时这个方法具有“ *双重职责* ”，不仅要填充已有的数组（如果足够长，**长度不够将不会被填充**），还要创建一个新的数组。
 
-###算法
+### 算法
 泛型接口有一个很大的有点，即针对集合的算法只需要实现一次。
 #### 排序与混排
 1. 排序sort
@@ -780,15 +780,15 @@ if (i < 0) {
 **PS :**只有采用随机访问，二分查找才有意义。如果必须用迭代的方式遍历链表找到中间元素的位置，二分查找将完全失去优势。因此，如果为binarySearch算法提供一个链表，它将自动变为线性查找。
 （1.4开始 binarySearch将检查列表是否实现了RandomAccess接口，决定采用二分查找还是线性查找）
 
-####简单算法
+#### 简单算法
 在Collections类中包含了几个简单实用的算法。
 包括查找集合最大最小值；将一个列表中的元素复制到另外一个列表中；用一个常量值填充容器；逆置一个列表的元素顺序。
 下面的API注释描述了Collections类的一些简单算法。
 ![Collections类的一些简单算法](img/CollectionsAlgorithm.png)
 
-###遗留的集合
+### 遗留的集合
 Java自问世以来就存在的集合类：Hashtable和非常有用的子类Properties、Vector的子类Stack以及BitSet类。
-####Hashtable
+#### Hashtable
 Hashtable与HashMap类作用一样，实际上他们拥有相同的接口。与Vector类的方法一样。Hashtable的方法也是同步的。（ps：Hashtable名字带有一个小写的t）。
 
 与HashMap的不同：
@@ -812,7 +812,7 @@ Hashtable直接使用对象的hashCode。而HashMap重新计算hash值。
 第六，初始大小和扩容方式的不同。
 Hashtable和HashMap它们两个内部实现方式的数组的初始大小和扩容的方式。Hashtable中hash数组默认大小是11，增加的方式是 old*2+1。HashMap中hash数组的默认大小是16，而且一定是2的指数。
 
-####枚举
+#### 枚举
 遗留集合采用Enumeration接口对元素进行遍历。Enumeration接口有两个方法，即hasMoreElements和nextElement。
 Hashtable类的elements方法将产生一个用于描述表中各个枚举值的对象：
 ```java
@@ -829,7 +829,7 @@ List<InputStream> stream = ... ;
 SequenceInputStream in = new SequenceInputStream(Collections.enumeration(stream));
 ```
 
-####属性映射表
+#### 属性映射表
 属性映射表（property map）是一个类型非常特殊的映射表结构。它有下面3个特性：
 
 * 键与值都是字符串
@@ -839,11 +839,11 @@ SequenceInputStream in = new SequenceInputStream(Collections.enumeration(stream)
 实现属性映射表的Java平台称为Properties。
 属性映射表通常用于程序的特殊配置选项。
 
-####栈
+#### 栈
 从1.0版本开始，标准类库中就包含了Stack类，其中有熟悉的push方法和pop方法。但是，Stack类拓展于Vector类，这种设计并不太令人满意，它可以让栈使用并不属于栈操作的insert和remove方法，即可在任何地方进行插入删除操作，而不仅仅是在栈顶。
 ![Stack API](img/stack.png)
 
-####位集
+#### 位集
 Java平台的BitSet类用于存放一个位序列（它不是数学上的集，成为位 *向量* 或 *数组* 更为合适）。如需高效地存储位序列（例如，标志）就可以使用BitSet。由于BitSet将位包装在字节里，所以使用BitSet要比使用Boolean对象的ArrayList更加高效。
 
 BitSet提供了一个便于读取、设置或清除各个位的接口。使用这个接口可以避免屏蔽和其他麻烦的位操作。如果将这些类存储在int或long变量中就必须进行这些繁琐的操作。
@@ -897,7 +897,7 @@ public class Sieve{
 }
 ```
 
-##多线程
+## 多线程
 
 
 [<button style="position: fixed; bottom: 50px;right: 50px;height:35px;width:50px;font-size:16px;">TOP</button>](#top)

@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="css/CoreJava.css">
-#<span id="top">Core Java Volume II</span>
+# <span id="top">Core Java Volume II</span>
 [TOC]
 
-##数据库编程
-###JDBC的设计
+## 数据库编程
+### JDBC的设计
 1. JDBC接口组织方式遵循了微软非常成功的ODBC模式。
     JDBC和ODBC都基于同一个思想：根据API编写的程序都可以与驱动管理器进行通信，而驱动管理器则通过驱动程序与实际的数据库进行通信。
 
