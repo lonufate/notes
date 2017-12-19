@@ -1,6 +1,8 @@
-<link rel="stylesheet" type="text/css" href="css/CoreJava.css">
-<script type="text/javascript" src="js/CoreJava.js"></script>
-# <span id="top">Core Java Volume I</span>
+<link rel="stylesheet" type="text/css" href="css/CoreJava.css">  
+<script type="text/javascript" src="js/CoreJava.js"></script>  
+
+# <span id="top">Core Java Volume I</span>  
+
 [TOC]
 
 ## 基础

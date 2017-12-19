@@ -15,35 +15,35 @@
 [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
 
 ## Markdown插件
-[Markdown editing]()
+[Markdown editing]()  
 [Markdown preview](https://github.com/revolunet/sublimetext-markdown-preview)    `ctrl+shift+p`后输入 `pib`(Preview in Brower)即可再浏览器中预览
-`ctrl+b`可以直接再当前目录生成html，然后利用sidebar再浏览器中打开
-[Markdown Extended]()
-[Monokai Extended]()
+`ctrl+b`可以直接再当前目录生成html，然后利用sidebar再浏览器中打开  
+[Markdown Extended]()  
+[Monokai Extended]()  
 提供一套Monokai的markdown主题
 
 ## Emmet
 [Emmet](https://github.com/emmetio/emmet)
 
 ## FileDiffs
-一个文件比较插件
-[FileDiffs]()
-`{ "keys": ["ctrl+shift+d"], "command": "file_diff_menu" }`
+一个文件比较插件  
+[FileDiffs]()  
+`{ "keys": ["ctrl+shift+d"], "command": "file_diff_menu" }`  
 添加文件对比快捷键
 
 ## 其他
-[AutoFileName](https://github.com/BoundInCode/AutoFileName) 文件路径自动提示
-[DocBlockr](https://github.com/spadgos/sublime-jsdocs)   js注释增强插件
-[git](https://github.com/kemayo/sublime-text-git)
-[JsFormat]()
-[Table Eidtor](https://github.com/vkocubinsky/SublimeTableEditor)
-[PlantUML](https://github.com/jvantuyl/sublime_diagram_plugin)   [参考](http://www.jianshu.com/p/e92a52770832)
-[Alignment](https://github.com/wbond/sublime_alignment)
-[AllAutocomplete](https://github.com/alienhard/SublimeAllAutocomplete)
-Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。
-[Termianl](https://github.com/wbond/sublime_terminal)
-[ColorPicker](http://weslly.github.io/ColorPicker/)
-[SublimeTmpl](https://github.com/kairyou/SublimeTmpl)   sublime模板插件
+[AutoFileName](https://github.com/BoundInCode/AutoFileName) 文件路径自动提示  
+[DocBlockr](https://github.com/spadgos/sublime-jsdocs)   js注释增强插件  
+[git](https://github.com/kemayo/sublime-text-git)  
+[JsFormat]()  
+[Table Eidtor](https://github.com/vkocubinsky/SublimeTableEditor)  
+[PlantUML](https://github.com/jvantuyl/sublime_diagram_plugin)   [参考](http://www.jianshu.com/p/e92a52770832)  
+[Alignment](https://github.com/wbond/sublime_alignment)  
+[AllAutocomplete](https://github.com/alienhard/SublimeAllAutocomplete)  
+Sublime Text 默认的 Autocomplete 功能只考虑当前的文件，而 AllAutocomplete 插件会搜索所有打开的文件来寻找匹配的提示词。  
+[Termianl](https://github.com/wbond/sublime_terminal)  
+[ColorPicker](http://weslly.github.io/ColorPicker/)  
+[SublimeTmpl](https://github.com/kairyou/SublimeTmpl)   sublime模板插件  
 
 ## 附录
 [Reference](https://github.com/jikeytang/sublime-text)  可选择性食用
