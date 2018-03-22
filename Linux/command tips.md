@@ -2,11 +2,11 @@
 ## 将输出的内容以表格的形式显示
 使用管道和`column -t`
 例如 `mount | column -t`
-![mount | column -t](img/mount|column.png)
+![mount | column -t](img/mount_column.png)
 
 使用`-s`可以指定分隔符
 例如`cat /etc/passwd | column -t -s:`
-![cat /etc/passwd | column -t -s:](img/mount|column-s.png)
+![cat /etc/passwd | column -t -s:](img/mount_column-s.png)
 
 ## 重复执行一个命令，直到它运行成功
 不少人关心如何实现重复执行命令，直到它成功返回并运行正常
